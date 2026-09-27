@@ -12,6 +12,7 @@
 | YouTube | [`domains/youtube.lst`](domains/youtube.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/youtube.lst) |
 | Adobe | [`domains/adobe.lst`](domains/adobe.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/adobe.lst) |
 | Boris FX | [`domains/borisfx.lst`](domains/borisfx.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/borisfx.lst) |
+| Artlist | [`domains/artlist.lst`](domains/artlist.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/artlist.lst) |
 | Cloudflare | [`domains/cloudflare.lst`](domains/cloudflare.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/cloudflare.lst) |
 | CloudFront | [`domains/cloudfront.lst`](domains/cloudfront.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/cloudfront.lst) |
 | DigitalOcean | [`domains/digitalocean.lst`](domains/digitalocean.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/digitalocean.lst) |
@@ -77,6 +78,10 @@ chatgpt.com
 ## Список Boris FX
 
 Включает адреса Boris FX Hub для входа, лицензий и загрузок, а также подтверждённые сайты прежних продуктов и iZotope, вошедшего в Boris FX в 2026 году. Для iZotope добавлены точные узлы Native Access; они принадлежат отдельной компании и используются не только iZotope. Основной источник — [требования Boris FX Hub](https://support.borisfx.com/hc/en-us/articles/20359074635277-How-can-I-use-the-Hub-behind-a-firewall). Подробнее о старых версиях VEGAS и iZotope — в [исследовании](research/borisfx.md).
+
+## Список Artlist
+
+Один файл для сайта Artlist, каталогов музыки, SFX, видео и шаблонов, AI Toolkit, Studio, Flows и Artlist Hub. В него включены точные адреса CDN, найденные на публичных страницах, и адреса проверки входа и оплаты. [Исследование](research/artlist.md) объясняет каждый домен, границы проверки без подписки и почему отдельные сайты Motion Array и Artgrid не входят.
 
 ## Как добавить список
 
