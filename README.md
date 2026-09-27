@@ -24,10 +24,13 @@
 | OVHcloud | [`domains/ovh.lst`](domains/ovh.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/ovh.lst) |
 | Roblox | [`domains/roblox.lst`](domains/roblox.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/roblox.lst) |
 | Telegram | [`domains/telegram.lst`](domains/telegram.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/telegram.lst) |
+| Telegram: адреса восстановления соединения | [`domains/telegram-bootstrap.lst`](domains/telegram-bootstrap.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/telegram-bootstrap.lst) |
 | TikTok | [`domains/tiktok.lst`](domains/tiktok.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/tiktok.lst) |
 | X / Twitter | [`domains/twitter.lst`](domains/twitter.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/twitter.lst) |
 
 Для новых списков есть [разбор источников и ограничений по каждому сервису](research/catalog-2026.md). Две уже существовавшие подборки, Google AI и YouTube, проверены повторно; они сохранены отдельными файлами.
+
+Дополнительный список Telegram содержит адреса сторонних служб, через которые отдельные клиенты получают резервную конфигурацию. Его назначение и ограничения описаны в [исследовании Telegram](research/telegram.md).
 
 ## Формат
 

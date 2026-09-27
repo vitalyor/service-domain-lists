@@ -36,7 +36,7 @@
 
 ### Telegram
 
-Зоны сайтов, ссылок, веб-клиента, файлов, публикаций и Fragment сверены с [документацией Telegram](https://core.telegram.org/api/links), [Bot API](https://core.telegram.org/bots/api) и [v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/telegram). По повторной сверке добавлен каталог викторин `quiz.directory`: на него [ссылается сам Telegram](https://telegram.org/tour/quizbot?setln=en). Важное ограничение: клиенты MTProto получают [IP-адреса дата-центров](https://core.telegram.org/api/datacenter), а CDN тоже может быть задан [IP-адресом](https://core.telegram.org/cdn). Поэтому доменный список не может обеспечить полный охват нативного клиента. TON как отдельная экосистема в файл не включена.
+Зоны сайтов, ссылок, веб-клиента, файлов, публикаций, Fragment и резервной конфигурации сверены с [официальным перечнем доменов Telegram](https://core.telegram.org/bug-bounty), [документацией ссылок](https://core.telegram.org/api/links) и [исходным кодом Telegram Desktop](https://github.com/telegramdesktop/tdesktop/blob/dev/Telegram/SourceFiles/mtproto/mtproto_config.cpp). Повторная проверка выявила `stel.com`, которого не было в первоначальном файле. Адреса сторонних служб для восстановления подключения вынесены в отдельный файл; см. [подробный разбор Telegram](telegram.md). Клиенты MTProto получают [IP-адреса дата-центров](https://core.telegram.org/api/datacenter), CDN тоже может быть задан [IP-адресом](https://core.telegram.org/cdn), а звонки используют [прямые адреса и ретрансляторы](https://core.telegram.org/api/end-to-end/video-calls). Поэтому доменные файлы не обеспечивают полного охвата нативного клиента. TON как отдельная экосистема в файл не включена.
 
 ### TikTok
 
