@@ -10,6 +10,8 @@
 | Anthropic и Claude | [`domains/anthropic.lst`](domains/anthropic.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/anthropic.lst) |
 | Google AI | [`domains/google-ai.lst`](domains/google-ai.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/google-ai.lst) |
 | YouTube | [`domains/youtube.lst`](domains/youtube.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/youtube.lst) |
+| Adobe | [`domains/adobe.lst`](domains/adobe.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/adobe.lst) |
+| Boris FX | [`domains/borisfx.lst`](domains/borisfx.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/borisfx.lst) |
 
 ## Формат
 
@@ -45,6 +47,14 @@ chatgpt.com
 ## Список YouTube
 
 Отдельный список основных адресов сайта, видео, изображений и API YouTube. Основан на [подборках v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/youtube) и [itdog](https://github.com/itdoginfo/allow-domains/blob/main/Services/youtube.lst). Домены `ggpht.com` и `jnn-pa.googleapis.com` могут использоваться и другими продуктами Google. Региональные варианты домена YouTube и сторонние дополнения не включены.
+
+## Список Adobe
+
+Охватывает основные продуктовые зоны Creative Cloud, Acrobat, Acrobat Sign, Firefly, Express, Fonts, Stock, Behance, Frame.io, Substance 3D, Adobe Connect, а также отдельные зоны Adobe Experience Manager, Dynamic Media, Marketo Engage и Commerce. Внешние адреса для загрузок и проверки входа добавлены только там, где они конкретно указаны Adobe. Основа — [сетевые требования Adobe](https://helpx.adobe.com/business/enterprise/manage-services/configure-services/network-endpoints.html), [перечень Acrobat](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/endpoints.html) и [требования Acrobat Sign](https://helpx.adobe.com/sign/web/system-level-resources/system-requirements.html). Разбор включений и ограничений — в [исследовании](research/adobe.md).
+
+## Список Boris FX
+
+Включает адреса Boris FX Hub для входа, лицензий и загрузок, а также подтверждённые сайты прежних продуктов и iZotope, вошедшего в Boris FX в 2026 году. Для iZotope добавлены точные узлы Native Access; они принадлежат отдельной компании и используются не только iZotope. Основной источник — [требования Boris FX Hub](https://support.borisfx.com/hc/en-us/articles/20359074635277-How-can-I-use-the-Hub-behind-a-firewall). Подробнее о старых версиях VEGAS и iZotope — в [исследовании](research/borisfx.md).
 
 ## Как добавить список
 
