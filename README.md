@@ -12,6 +12,22 @@
 | YouTube | [`domains/youtube.lst`](domains/youtube.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/youtube.lst) |
 | Adobe | [`domains/adobe.lst`](domains/adobe.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/adobe.lst) |
 | Boris FX | [`domains/borisfx.lst`](domains/borisfx.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/borisfx.lst) |
+| Cloudflare | [`domains/cloudflare.lst`](domains/cloudflare.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/cloudflare.lst) |
+| CloudFront | [`domains/cloudfront.lst`](domains/cloudfront.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/cloudfront.lst) |
+| DigitalOcean | [`domains/digitalocean.lst`](domains/digitalocean.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/digitalocean.lst) |
+| Discord | [`domains/discord.lst`](domains/discord.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/discord.lst) |
+| Google Meet | [`domains/google-meet.lst`](domains/google-meet.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/google-meet.lst) |
+| Google Play | [`domains/google-play.lst`](domains/google-play.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/google-play.lst) |
+| HDRezka | [`domains/hdrezka.lst`](domains/hdrezka.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/hdrezka.lst) |
+| Hetzner | [`domains/hetzner.lst`](domains/hetzner.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/hetzner.lst) |
+| Meta | [`domains/meta.lst`](domains/meta.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/meta.lst) |
+| OVHcloud | [`domains/ovh.lst`](domains/ovh.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/ovh.lst) |
+| Roblox | [`domains/roblox.lst`](domains/roblox.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/roblox.lst) |
+| Telegram | [`domains/telegram.lst`](domains/telegram.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/telegram.lst) |
+| TikTok | [`domains/tiktok.lst`](domains/tiktok.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/tiktok.lst) |
+| X / Twitter | [`domains/twitter.lst`](domains/twitter.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/twitter.lst) |
+
+Для новых списков есть [разбор источников и ограничений по каждому сервису](research/catalog-2026.md). Две уже существовавшие подборки, Google AI и YouTube, проверены повторно; они сохранены отдельными файлами.
 
 ## Формат
 
