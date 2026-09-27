@@ -1,6 +1,6 @@
 # Списки доменов сервисов
 
-Здесь собраны текстовые списки доменов, сгруппированные по сервисам. Каждый список находится в отдельном файле и доступен по прямой ссылке.
+Здесь собраны текстовые списки доменов, сгруппированные по сервисам. Для каждого сервиса достаточно одной ссылки: связанные с его работой адреса сторонних платформ включены в тот же файл. Каждый список доступен по прямой ссылке.
 
 ## Списки
 
@@ -8,7 +8,6 @@
 | --- | --- | --- |
 | OpenAI и ChatGPT | [`domains/openai.lst`](domains/openai.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/openai.lst) |
 | Anthropic и Claude | [`domains/anthropic.lst`](domains/anthropic.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/anthropic.lst) |
-| Claude: внешние библиотеки артефактов | [`domains/anthropic-artifacts.lst`](domains/anthropic-artifacts.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/anthropic-artifacts.lst) |
 | Google AI | [`domains/google-ai.lst`](domains/google-ai.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/google-ai.lst) |
 | YouTube | [`domains/youtube.lst`](domains/youtube.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/youtube.lst) |
 | Adobe | [`domains/adobe.lst`](domains/adobe.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/adobe.lst) |
@@ -25,7 +24,6 @@
 | OVHcloud | [`domains/ovh.lst`](domains/ovh.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/ovh.lst) |
 | Roblox | [`domains/roblox.lst`](domains/roblox.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/roblox.lst) |
 | Telegram | [`domains/telegram.lst`](domains/telegram.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/telegram.lst) |
-| Telegram: адреса восстановления соединения | [`domains/telegram-bootstrap.lst`](domains/telegram-bootstrap.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/telegram-bootstrap.lst) |
 | TikTok | [`domains/tiktok.lst`](domains/tiktok.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/tiktok.lst) |
 | X / Twitter | [`domains/twitter.lst`](domains/twitter.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/twitter.lst) |
 
@@ -33,7 +31,7 @@
 
 Результаты повторной проверки всех файлов приведены в [журнале аудита](research/audit-2026-09-27.md).
 
-Дополнительный список Telegram содержит адреса сторонних служб, через которые отдельные клиенты получают резервную конфигурацию. Его назначение и ограничения описаны в [исследовании Telegram](research/telegram.md).
+Список Telegram также содержит адреса сторонних служб, через которые отдельные клиенты получают резервную конфигурацию. Их назначение и ограничения описаны в [исследовании Telegram](research/telegram.md).
 
 ## Формат
 
@@ -60,7 +58,7 @@ chatgpt.com
 
 Некоторые действия Claude Code обращаются к общим сторонним площадкам, например GitHub, npm и Google Cloud Storage. Эти домены не включены: они обслуживают множество других продуктов и не являются специфичными для Anthropic.
 
-Отдельный [дополнительный список](domains/anthropic-artifacts.lst) содержит общие библиотеки и шрифты, которые [Anthropic перечисляет для артефактов](https://code.claude.com/docs/en/desktop#network-access-requirements). Эти адреса обслуживают и другие сайты.
+В этот же файл включены общие библиотеки и шрифты, которые [Anthropic перечисляет для артефактов](https://code.claude.com/docs/en/desktop#network-access-requirements). Эти адреса обслуживают и другие сайты.
 
 ## Список Google AI
 
