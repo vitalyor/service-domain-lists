@@ -7,6 +7,7 @@
 | Сервис | Файл | Прямая ссылка |
 | --- | --- | --- |
 | OpenAI и ChatGPT | [`domains/openai.lst`](domains/openai.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/openai.lst) |
+| Anthropic и Claude | [`domains/anthropic.lst`](domains/anthropic.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/anthropic.lst) |
 
 ## Формат
 
@@ -24,6 +25,12 @@ chatgpt.com
 Список составлен по [сетевым рекомендациям OpenAI](https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps), [подборке сообщества v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/openai) и наблюдениям за соединениями приложения. Это не официальный и не гарантированно полный перечень.
 
 Некоторые домены принадлежат сторонним сервисам, например `auth0.com` и `intercom.io`, и могут использоваться другими приложениями. Нужность отдельных дополнительных CDN-доменов сейчас не подтверждена. Для некоторых функций, включая голосовой режим ChatGPT, одних доменных правил может быть недостаточно: [OpenAI описывает](https://help.openai.com/en/articles/9247338-network-recommendations-for-chatgpt-errors-on-web-and-apps) также соединения с изменяемыми IP-адресами.
+
+## Список Anthropic и Claude
+
+Основные домены взяты из [требований Anthropic к сети для Claude Desktop](https://code.claude.com/docs/en/desktop#network-access-requirements) и [Claude Code](https://code.claude.com/docs/en/network-config#network-access-requirements). Дополнительно включены `clau.de`, `claudemcpclient.com` и отдельный CDN-адрес из [списка сообщества v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/anthropic). Список охватывает домены сайта, приложений, API, документации, пользовательских материалов и MCP, но не может гарантировать работу каждой интеграции.
+
+Некоторые действия Claude Code обращаются к общим сторонним площадкам, например GitHub, npm и Google Cloud Storage. Эти домены не включены: они обслуживают множество других продуктов и не являются специфичными для Anthropic.
 
 ## Как добавить список
 
