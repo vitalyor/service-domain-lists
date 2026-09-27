@@ -30,6 +30,8 @@ chatgpt.com
 
 Основные домены взяты из [требований Anthropic к сети для Claude Desktop](https://code.claude.com/docs/en/desktop#network-access-requirements) и [Claude Code](https://code.claude.com/docs/en/network-config#network-access-requirements). Дополнительно включены `clau.de`, `claudemcpclient.com` и отдельный CDN-адрес из [списка сообщества v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/anthropic). При перепроверке также добавлены `claude.site` для опубликованных артефактов и `claude.new`, который перенаправляет на новый чат. Список охватывает домены сайта, приложений, API, документации, пользовательских материалов и MCP, но не может гарантировать работу каждой интеграции.
 
+Для проверки при входе добавлен `challenges.cloudflare.com`: его использование на `claude.ai` подтверждено [отчётом пользователя Claude Desktop](https://github.com/anthropics/claude-code/issues/89264). Также включены домены сервиса защиты от мошенничества Sift: [Wappalyzer обнаруживает его на claude.ai](https://www.wappalyzer.com/technologies/analytics/sift/), а [документация Sift](https://developers.sift.com/docs/v204/curl/decisions-api/decision-webhooks) использует адреса в зонах `sift.com` и `siftscience.com`. Это сторонние сервисы, которые могут встречаться и на других сайтах.
+
 Некоторые действия Claude Code обращаются к общим сторонним площадкам, например GitHub, npm и Google Cloud Storage. Эти домены не включены: они обслуживают множество других продуктов и не являются специфичными для Anthropic.
 
 ## Как добавить список
