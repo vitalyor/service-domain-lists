@@ -8,6 +8,7 @@
 | --- | --- | --- |
 | OpenAI и ChatGPT | [`domains/openai.lst`](domains/openai.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/openai.lst) |
 | Anthropic и Claude | [`domains/anthropic.lst`](domains/anthropic.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/anthropic.lst) |
+| Google AI | [`domains/google-ai.lst`](domains/google-ai.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/google-ai.lst) |
 
 ## Формат
 
@@ -33,6 +34,12 @@ chatgpt.com
 Для проверки при входе добавлен `challenges.cloudflare.com`: его использование на `claude.ai` подтверждено [отчётом пользователя Claude Desktop](https://github.com/anthropics/claude-code/issues/89264). Также включены домены сервиса защиты от мошенничества Sift: [Wappalyzer обнаруживает его на claude.ai](https://www.wappalyzer.com/technologies/analytics/sift/), а [документация Sift](https://developers.sift.com/docs/v204/curl/decisions-api/decision-webhooks) использует адреса в зонах `sift.com` и `siftscience.com`. Это сторонние сервисы, которые могут встречаться и на других сайтах.
 
 Некоторые действия Claude Code обращаются к общим сторонним площадкам, например GitHub, npm и Google Cloud Storage. Эти домены не включены: они обслуживают множество других продуктов и не являются специфичными для Anthropic.
+
+## Список Google AI
+
+Охватывает отдельные продукты Gemini, Gemini API, AI Studio, Gemini Notebook (ранее NotebookLM), Flow, Labs, Jules, Opal, Stitch, Antigravity, Gemini Code Assist и некоторые функции Gemini в Google Cloud и на мобильных устройствах. Список составлен по [сетевым требованиям Google для Gemini](https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/gemini-app-firewall-settings), [требованиям Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini) и [списку сообщества v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/google-deepmind). Подробности и границы проверки приведены в [исследовании](research/google-ai.md).
+
+Некоторые точные адреса из требований Google, например `www.google.com`, `play.google.com` и `www.youtube.com`, используются также другими продуктами Google. Список не содержит общих доменных зон `google.com`, `googleapis.com` и `gstatic.com`. Он не гарантирует работу всех встроенных функций Google Workspace, сторонних интеграций или доступность сервиса для конкретного аккаунта и региона.
 
 ## Как добавить список
 
