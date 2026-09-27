@@ -9,6 +9,7 @@
 | OpenAI и ChatGPT | [`domains/openai.lst`](domains/openai.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/openai.lst) |
 | Anthropic и Claude | [`domains/anthropic.lst`](domains/anthropic.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/anthropic.lst) |
 | Google AI | [`domains/google-ai.lst`](domains/google-ai.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/google-ai.lst) |
+| YouTube | [`domains/youtube.lst`](domains/youtube.lst) | [Текстовый список](https://raw.githubusercontent.com/vitalyor/service-domain-lists/main/domains/youtube.lst) |
 
 ## Формат
 
@@ -37,9 +38,13 @@ chatgpt.com
 
 ## Список Google AI
 
-Охватывает отдельные продукты Gemini, Gemini API, AI Studio, Gemini Notebook (ранее NotebookLM), Flow, Labs, Jules, Opal, Stitch, Antigravity, Gemini Code Assist и некоторые функции Gemini в Google Cloud и на мобильных устройствах. Список составлен по [сетевым требованиям Google для Gemini](https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/gemini-app-firewall-settings), [требованиям Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini) и [списку сообщества v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/google-deepmind). Подробности и границы проверки приведены в [исследовании](research/google-ai.md).
+Охватывает отдельные продукты Gemini, Gemini API, AI Studio, Gemini Notebook (ранее NotebookLM), Flow, Labs, Jules, Opal, Stitch, Antigravity, Gemini Code Assist и некоторые функции Gemini в Google Cloud и на мобильных устройствах. Список составлен по [требованиям Gemini Code Assist](https://docs.cloud.google.com/gemini/docs/codeassist/set-up-gemini), [списку сообщества v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/google-deepmind) и отчётам о работе отдельных продуктов. Подробности и границы проверки приведены в [исследовании](research/google-ai.md).
 
-Некоторые точные адреса из требований Google, например `www.google.com`, `play.google.com` и `www.youtube.com`, используются также другими продуктами Google. Список не содержит общих доменных зон `google.com`, `googleapis.com` и `gstatic.com`. Он не гарантирует работу всех встроенных функций Google Workspace, сторонних интеграций или доступность сервиса для конкретного аккаунта и региона.
+В список не входят YouTube, реклама, аналитика, карты, магазин приложений и общие статические ресурсы Google. Несколько общих адресов сохранены для входа и подтверждённых API: например, `accounts.google.com` и `oauth2.googleapis.com`. Для работы отдельных функций могут понадобиться дополнительные общие адреса из [официального списка сетевых зависимостей Gemini](https://knowledge.workspace.google.com/admin/generative-ai/gemini-app/gemini-app-firewall-settings). Этот файл не охватывает целиком Google Workspace и не гарантирует доступность сервиса для конкретного аккаунта или региона.
+
+## Список YouTube
+
+Отдельный список основных адресов сайта, видео, изображений и API YouTube. Основан на [подборках v2fly](https://github.com/v2fly/domain-list-community/blob/master/data/youtube) и [itdog](https://github.com/itdoginfo/allow-domains/blob/main/Services/youtube.lst). Домены `ggpht.com` и `jnn-pa.googleapis.com` могут использоваться и другими продуктами Google. Региональные варианты домена YouTube и сторонние дополнения не включены.
 
 ## Как добавить список
 
