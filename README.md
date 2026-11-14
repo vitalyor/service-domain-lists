@@ -57,11 +57,15 @@ chatgpt.com
 
 Для проверки при входе добавлен `challenges.cloudflare.com`: его использование на `claude.ai` подтверждено [отчётом пользователя Claude Desktop](https://github.com/anthropics/claude-code/issues/89264). Также включены домены сервиса защиты от мошенничества Sift: [Wappalyzer обнаруживает его на claude.ai](https://www.wappalyzer.com/technologies/analytics/sift/), а [документация Sift](https://developers.sift.com/docs/v204/curl/decisions-api/decision-webhooks) использует адреса в зонах `sift.com` и `siftscience.com`. Это сторонние сервисы, которые могут встречаться и на других сайтах.
 
-Для Claude Code добавлен `datadoghq.com`: через него идут телеметрия и отчёты об ошибках (`http-intake.logs.us5.datadoghq.com`, `browser-intake-us5-datadoghq.com`), и без него они уходили бы с реального IP. Для оплаты и чата поддержки на `claude.ai` добавлены `stripe.com`, `stripe.network`, `intercom.io` и `intercomcdn.com`; эти четыре адреса в документации Anthropic не перечислены и не проверены по трафику. Все пять используются и другими сайтами.
+Из списка v2fly добавлены остальные домены Anthropic: `claude.dev`, `ant.dev`, `anthropic.team`, `antspace.dev`, `claudepages.dev`. Домены `chatbotclaude.com`, `claudeacademy.com` и `claudestudio.com` зарегистрированы через MarkMonitor и стоят на DNS Cloudflare, то есть выглядят защитными; трафика на них почти нет.
+
+Телеметрия Claude Code указана точными хостами, а не зонами целиком: `http-intake.logs.us5.datadoghq.com` и `browser-intake-us5-datadoghq.com` из [документации Anthropic](https://code.claude.com/docs/en/network-config#network-access-requirements), плюс `o1158394.ingest.us.sentry.io` из списка v2fly. Зоны `datadoghq.com` и `sentry.io` не включены: на них сидят тысячи чужих сервисов.
+
+Stripe и Intercom (оплата и чат поддержки) не включены: в документации Anthropic их нет, а сами зоны слишком широкие. Если оплата или поддержка на `claude.ai` с этой машины не работает, добавьте `js.stripe.com`, `m.stripe.network` и `widget.intercom.io`, предварительно проверив их в сетевом журнале браузера.
 
 Некоторые действия Claude Code обращаются к общим сторонним площадкам, например GitHub, npm и Google Cloud Storage. Эти домены не включены: они обслуживают множество других продуктов и не являются специфичными для Anthropic.
 
-В этот же файл включены общие библиотеки и шрифты, которые [Anthropic перечисляет для артефактов](https://code.claude.com/docs/en/desktop#network-access-requirements). Эти адреса обслуживают и другие сайты.
+В этот же файл включены хосты JavaScript-библиотек, которые [Anthropic перечисляет для артефактов](https://code.claude.com/docs/en/desktop#network-access-requirements): `cdnjs.cloudflare.com`, `cdn.jsdelivr.net`, `cdn.tailwindcss.com`, `code.jquery.com`, `unpkg.com`. Без них части артефактов не работают, и запасного варианта у них нет, но эти хосты обслуживают и другие сайты. Шрифты Google (`fonts.googleapis.com`, `fonts.gstatic.com`) убраны: Anthropic называет их необязательными, без них артефакты рисуются запасными шрифтами, а сами хосты используют полинтернета.
 
 ## Список Google AI
 
