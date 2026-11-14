@@ -57,6 +57,8 @@ chatgpt.com
 
 Для проверки при входе добавлен `challenges.cloudflare.com`: его использование на `claude.ai` подтверждено [отчётом пользователя Claude Desktop](https://github.com/anthropics/claude-code/issues/89264). Также включены домены сервиса защиты от мошенничества Sift: [Wappalyzer обнаруживает его на claude.ai](https://www.wappalyzer.com/technologies/analytics/sift/), а [документация Sift](https://developers.sift.com/docs/v204/curl/decisions-api/decision-webhooks) использует адреса в зонах `sift.com` и `siftscience.com`. Это сторонние сервисы, которые могут встречаться и на других сайтах.
 
+Для Claude Code добавлен `datadoghq.com`: через него идут телеметрия и отчёты об ошибках (`http-intake.logs.us5.datadoghq.com`, `browser-intake-us5-datadoghq.com`), и без него они уходили бы с реального IP. Для оплаты и чата поддержки на `claude.ai` добавлены `stripe.com`, `stripe.network`, `intercom.io` и `intercomcdn.com`; эти четыре адреса в документации Anthropic не перечислены и не проверены по трафику. Все пять используются и другими сайтами.
+
 Некоторые действия Claude Code обращаются к общим сторонним площадкам, например GitHub, npm и Google Cloud Storage. Эти домены не включены: они обслуживают множество других продуктов и не являются специфичными для Anthropic.
 
 В этот же файл включены общие библиотеки и шрифты, которые [Anthropic перечисляет для артефактов](https://code.claude.com/docs/en/desktop#network-access-requirements). Эти адреса обслуживают и другие сайты.
